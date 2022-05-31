@@ -7,6 +7,8 @@
   </head>         
  
     <style>
+     body {font-family: Arial, Helvetica, sans-serif;}
+
       .dropbtn {
           background-color: #aa042e;
           color: white;
@@ -14,26 +16,57 @@
           font-size: 16px;
           border: none;
         }
-        
-        .dropdown {
-          position: relative;
-          display: inline-block;
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        }
+
+    .navbar a {
+         float: left;
+         font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+        }
+
+    .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
         }
         
         .dropdown-content {
           display: none;
           position: absolute;
-          background-color: #f1f1f1;
+          background-color: #f9f9f9;;
           min-width: 160px;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           z-index: 1;
         }
         
         .dropdown-content a {
+          float: none;
           color: black;
           padding: 12px 16px;
           text-decoration: none;
           display: block;
+          text-align: left;
         }
         
         .dropdown-content a:hover {background-color: #ddd;}
@@ -46,24 +79,40 @@
 
 <body>
 
-    <div class="dropdown">
-      <button class="dropbtn">APPS</button>
-      <div class="dropdown-content">
-        <a href="https://voltranewi.github.io/pacmen.github.io/">PACMEN</a>
-        <a href="https://voltranewi.github.io/BusTracker/">BUSTRACKER</a>
-        <a href="https://voltranewi.github.io/EYES/">OJOS</a>
-       </div>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Acerca de 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://voltranewi.github.io/pacmen.github.io/">BIO</a>
+                <a href="https://youtu.be/Nqrc3qvdUDk/">VIDEO</a>
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">Aplicaciones 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://voltranewi.github.io/pacmen.github.io/">PACMEN</a>
+                <a href="https://voltranewi.github.io/BusTracker/">BUSTRACKER</a>
+                <a href="https://voltranewi.github.io/EYES/">OJOS</a>
+            </div>
+          </div>  
+          <a href="#news">Contacto</a>
    </div>
 
     <h1>Portafolio de VICTOR OLTRA</h1>
     <h2>PROGRAMACION A MAXIMA VELOCIDAD</h2> 
     <p>WELCOME</p>                     
-    <img src="./FerrariF1.jpeg" alt="FOTO PRINCIPAL"/>
+    <img src="./Ferrari F1.jpeg" alt="FOTO PRINCIPAL"/>
     <h2>VIDEO</h2>               
     <a href="https://youtu.be/Nqrc3qvdUDk/"> <img src="FotoVictor.JPG" height ="200" width="170" ></a>
 
     <h2>FABRICA DE PACMEN</h2>  
-    <a href="https://voltranewi.github.io/pacmen.github.io/"> <img src="Pacmen.png" height ="200" width="250" ></a>
+    <a href="https://voltranewi.github.io/pacmen.github.io/"> <img src="PacMen.png" height ="200" width="250" ></a>
     
     <h2>SIMULACION DE AUTOBUS BOSTON</h2>   
     <a href="https://voltranewi.github.io/BusTracker/"> <img src="BusTracker.png" height ="200" width="200" ></a>
